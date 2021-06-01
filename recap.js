@@ -187,4 +187,130 @@
 // }
 // readStatus();
  
-  
+  //conditions
+  let hour=10;
+if(hour>=6 && hour<12)//block of codes
+console.log('good morning');
+else if (hour>=12&&hours<18)
+    console.log('good evening');
+
+else 
+    console.log('good night');
+
+    //loops repeat an acion for a number of time
+    //for ,while,do while,for of ,for in- loops
+
+
+//for loop 
+// for(initialexpression;Condition ; incrementexpress ){
+    
+// }
+// for(let i=0;i<5;i++)
+for(let i=1;i<=5;i++)
+{
+    console.log('hello world',i)
+}
+
+for(let i=1;i<=5;i++){
+ if(i%2!=0) console.log(i)
+}
+
+for(let i=5;i>=1;i--){
+    if(i%2!=0) console.log(i)
+}
+ 
+//object
+// object.property() eg arrays
+// object.method()eg function
+const s="hello"
+console.log(s.toLowerCase())
+
+const s2=new String('HELLO')
+console.log(s2)
+
+// console.log(window)
+// window.alert();
+// alert(1)
+// console.log(navigator.appVersion); information about my system(property)
+
+//object literals
+// const book1={
+//     title:'book1',
+//     author:'johndoe',
+//     year:'2013',
+//     getSummary:function(){
+//         return `${this.title} was writen by ${this.author} in ${this.year}` ;
+//     } 
+// };
+// // console.log(book1.title)
+// console.log(book1.getSummary())
+
+// const book2={
+//     title:'book2',
+//     author:'john doe',
+//     year:'2016',
+//     getSummary:function(){
+//         return `${this.title} was writen by ${this.author} in ${this.year}` ;
+//     } 
+// };
+// console.log(Object.values(book2))
+// console.log(Object.keys(book1))
+
+//constructor
+
+function Book(title,author,year){
+   
+this.title=title;
+this.author=author;
+this.year= year;
+// this.getSummary=function(){
+// return `${this.title} was writen by ${this.author} in ${this.year}` ;
+// } 
+// Book.prototype.getSummary=function(){
+//     return `${this.title} was writen by ${this.author} in ${this.year}` ;
+
+// };
+// Book.prototype.getAge=function(){
+// const year=new Date().getFullYear=this.year
+// return `${this.title} is ${year} old`
+//  };
+// Book.prototype.revise=function(){ 
+// this.year=newYear;
+// this.revised=true;
+
+// }
+}
+
+function Magazine(title,author,year,month){ 
+Book.call(this,title,author,year);
+this.month=month;
+
+}
+const mag1=new Magazine('Mag1','John Doe','2018','jan');
+console.log(mag1)
+
+
+
+
+//instatiate an object
+const book1=new Book('book1','john document','2013');
+const book2=new Book('book2','john document','2017');
+
+// console.log(book1)
+// console.log(book2)
+// console.log(book2.getSummary())
+// console.log(book2.getAge())
+// book2.revise('2018')
+// console.log(book2)
+//prototypes
+
+
+class Books{
+    constructor(title,author,year){
+    this.title=title;
+    this.author=author;
+    this.year= year;
+    }
+        }
+const book3=new Book('book3','John Doe','2012')
+console.log(book3)

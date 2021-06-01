@@ -213,3 +213,106 @@ a=30;
 console.log(a)
 }
 strict()       //function as a value
+
+
+//  let myPromise = new Promise(function(myResolve, myReject) {
+        
+//           myResolve(); 
+//           myReject();  
+//         });
+        
+//         myPromise.then(
+//           function(value) {  },
+//           function(error) { }
+//         );
+
+
+//  let myPromise=new Promise(function(myResolve,myReject){
+//             myResolve();
+//             myReject();
+
+//         });
+//         myPromise.then(
+//             function(value){},
+//             function (error){
+
+//             }
+//         );
+// let myPromise=new Promise(function(myResolve, myReject) {
+//     var x=0;
+//     if(x==0){myResolve("ok")};
+//     else {myReject("error")};
+// });
+
+// myPromise.then(
+//     function(value) {myDisplayer(value);},
+//     function(error) {myDisplayer(error);}
+//   );
+
+
+
+let farm = {
+    farmId: farmId,
+    name: name,
+    farmer: farmer,
+    phone: phone,
+    address: address
+};
+
+newFarm=Object.assign(transaction,{category:'agribiz'})
+console.log("transaction:",transaction)
+console.log("newTransaction:",newTransact)
+// for(var i=0;i<=15;i++)
+// if (x===0){
+//   console.log(i+''+"is even");
+// }
+// else if (1%2===0);{
+//   console.log(i+''+'is even');
+// }
+// else{
+//     console.log(i+''+'is an odd number');
+// }
+
+if (hours<18){
+  console.log("good mornig")
+}
+else{console.log('good evening')}
+
+function count(){ 
+  var num=(1,100);
+  var max=100
+  for (x in num){ 
+  if(x==max){
+      console.log(x)
+  }}}
+  count();
+
+
+var marks=80;
+if(marks<60){console.log("f")}
+elseif(marks<70);
+  console,log("D")
+elseif(marks<80);
+  console.log("c")
+elseif(marks<90);
+  console.log(" B")
+elseif(marks<100);
+  console.log("A")
+// else 
+//   console.log('f')
+
+function readStatus(){
+  library = [ { author: 'Bill Gates', 
+    title: 'The Road Ahead', 
+    readingStatus: true }, 
+  library2={
+     author: 'Steve Jobs',
+     title: 'Walter Isaacson',
+      readingStatus: true }, 
+  library3={ 
+      author: 'Suzanne Collins', 
+      title: 'Mockingjay',
+   readingStatus: false }];
+
+
+}
